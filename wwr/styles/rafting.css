@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: var(--heading-font);
+    font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
@@ -37,6 +37,10 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 .socialmedia a {
@@ -89,6 +93,11 @@ article {
     height: 30px;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+.socialmedia a {
+    color: var(--accent2-color);
+    text-decoration: none;
 }
 
 section h2 {
