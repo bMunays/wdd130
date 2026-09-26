@@ -1,7 +1,7 @@
 /* variables */
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
+    --secondary-color: #2E8B57;
     --accent1-color: #264653;
     --accent2-color: #b22222;
     --heading-font: "Times New Roman", "Georgia", "Serif";
@@ -240,7 +240,7 @@ footer p {
 hr {
     border: 0;
     height: 1px;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     margin: 20px auto 10px auto;
     width: 840px;
 }
