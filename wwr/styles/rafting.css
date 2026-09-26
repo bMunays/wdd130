@@ -192,15 +192,6 @@ article {
     margin-top: 0.5rem;
 }
 
-/* Headings for sections */
-section h2 {
-    background-color: var(--accent1-color);
-    color: var(--light-color);
-    text-align: center;
-    padding: 12px;
-    margin-bottom: 15px;
-}
-
 /* Footer area */
 footer {
     display: grid;
