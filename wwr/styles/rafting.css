@@ -4,9 +4,11 @@
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #b22222;
-    /* #e9646a; */
     --heading-font: "Times New Roman", "Georgia", "Serif";
     --body-font: Arial, Helvetica, sans-Serif;
+
+    --light-color: #ffffff;
+    --border-color: #cccccc;
 }
 
 /* global reset */
@@ -64,7 +66,7 @@ nav a {
     text-decoration: none;
     color: var(--accent1-color);
     padding: 0.75rem 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
 }
 
 nav a:hover {
@@ -85,7 +87,7 @@ article {
     position: relative;
     text-align: center;
     /* Align centre */
-    color: #fff;
+    color: var(--light-color);
 }
 
 .hero img {
@@ -102,7 +104,7 @@ article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--light-color);
 }
 
 /* TODO Style the article image using absolute positioning and a style of your choice */
@@ -159,7 +161,7 @@ article {
 /* Headings for sections */
 section h2 {
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--light-color);
     text-align: center;
     padding: 12px;
     margin-bottom: 15px;
