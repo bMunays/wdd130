@@ -1,13 +1,15 @@
+/* variables */
 :root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #b22222;
-    /*  #e9646a; */
+    /* #e9646a; */
     --heading-font: "Times New Roman", "Georgia", "Serif";
     --body-font: Arial, Helvetica, sans-Serif;
 }
 
+/* global reset */
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +21,23 @@ body {
     color: var(--accent1-color);
 }
 
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* header area */
 header {
     display: grid;
-    grid-template-columns: 150px 1 fr;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     gap: 2rem;
     padding: 1rem;
@@ -33,42 +49,9 @@ header img {
     height: auto;
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-footer p {
-    align-items: center;
-}
-
-.socialmedia {
-    display: flex;
-    gap: 1rem;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 35px;
-    height: 35px;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+/* navigation area */
+nav {
+    margin: 0;
 }
 
 nav ul {
@@ -80,46 +63,15 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--accent1-color);
-    padding: 0.75rem 1 rem;
-    border: 1px solid #ccc
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
 }
 
-.history {
-    display: grid;
-    grid-template-columns: 1fr 250px 1fr;
-    align-items: center;
-    grid-area: 1rem;
+nav a:hover {
+    color: var(--secondary-color);
 }
 
-.history h2 {
-    grid-column: 1/4;
-}
-
-.history img {
-    width: 100%;
-}
-
-.adventures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    text-align: center;
-}
-
-.adventures h2 {
-    grid-column: 1 / 6;
-}
-
-.adventures img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-nav {
-    margin: 0;
-}
-
+/* content spacing */
 nav,
 p,
 section,
@@ -128,18 +80,11 @@ article {
     padding: 8px;
 }
 
-nav a:hover {
-    color: var(--secondary-color);
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* hero */
 .hero {
     position: relative;
     text-align: center;
-    /* Align centre*/
+    /* Align centre */
     color: #fff;
 }
 
@@ -160,7 +105,7 @@ nav a:hover {
     color: #fff;
 }
 
-/* TODO Style the article image using absolute positioning and a style of your choice*/
+/* TODO Style the article image using absolute positioning and a style of your choice */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -177,19 +122,41 @@ nav a:hover {
     width: 125px;
 }
 
-/* Resize social media icons*/
-.socialmedia img {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    margin-right: 10px;
+/* history */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    align-items: center;
+    gap: 1rem;
 }
 
-.socialmedia a {
-    color: var(--accent2-color);
-    text-decoration: none;
+.history h2 {
+    grid-column: 1 / 4;
 }
 
+.history img {
+    width: 100%;
+}
+
+/* adventures section */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.adventures h2 {
+    grid-column: 1 / 6;
+}
+
+.adventures img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Headings for sections */
 section h2 {
     background-color: var(--accent1-color);
     color: #fff;
@@ -198,6 +165,36 @@ section h2 {
     margin-bottom: 15px;
 }
 
+/* Footer area */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer p {
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialmedia a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Other */
 hr {
     border: 0;
     height: 1px;
