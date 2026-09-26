@@ -131,36 +131,65 @@ article {
 
 /* history */
 .history {
-    display: grid;
-    grid-template-columns: 1fr 250px 1fr;
-    align-items: center;
-    gap: 1rem;
+    border: 1px solid var(--border-color);
+    margin: 1rem 0;
 }
 
 .history h2 {
-    grid-column: 1 / 4;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--light-color);
+    padding: 0.75rem;
+    margin: 0;
 }
 
-.history img {
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.history-content img {
     width: 100%;
+    height: auto;
 }
 
 /* adventures section */
 .adventures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    text-align: center;
+    border: 1px solid #999;
+    margin: 1rem 0;
 }
 
 .adventures h2 {
-    grid-column: 1 / 6;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 0.75rem;
+    margin: 0;
 }
 
-.adventures img {
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
     width: 100%;
     height: 150px;
     object-fit: cover;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
 }
 
 /* Headings for sections */
