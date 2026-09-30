@@ -116,3 +116,9 @@ footer {
 .column2 {
     grid-template-columns: 1fr 2fr;
 }
+
+button {
+    justify-self: center;
+    width: fit-content;
+    padding: 0.75rem 2rem;
+}
