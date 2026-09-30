@@ -1,0 +1,47 @@
+:root {
+    --background-color: black;
+    --border-color: lightgray;
+    --row-color: #f2f2f2;
+    --text-color: white;
+    --hover-color: #e6f7ff;
+}
+
+table {
+    border-collapse: collapse;
+    height: 100px;
+}
+
+caption {
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    /* caption-side: bottom; */
+}
+
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 10px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    position: sticky;
+}
+
+thead,
+tfoot {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* color the nth row */
+tr:nth-child(even) {
+    background-color: var(--row-color);
+}
+
+/* Apply hover */
+tbody tr:hover {
+    background-color: var(--hover-color);
+}
