@@ -63,14 +63,19 @@
                     <div class="form-group purpose-group">
                         <p class="purpose-label">Message<br>Purpose</p>
                         <div class="radio-options">
-                            <label><input type="radio" name="purpose" value="general" checked>
-                                General
-                                Inquiry</label>
-                            <label><input type="radio" name="purpose" value="reservation">
-                                Reservation
-                                Question</label>
-                            <label><input type="radio" name="purpose" value="website"> Website
-                                Suggestion</label>
+                            <label for="general">
+                                <input type="radio" id="general" name="purpose" value="general"
+                                  checked> General Inquiry
+                            </label>
+                            <label for="reservation">
+                                <input type="radio" id="reservation" name="purpose"
+                                  value="reservation"> Reservation
+                                Question
+                            </label>
+                            <label for="website">
+                                <input type="radio" id="website" name="purpose" value="website">
+                                Website Suggestion
+                            </label>
                         </div>
                     </div>
 
@@ -81,9 +86,11 @@
                     </div>
 
                     <div class="checkbox-group">
-                        <label><input type="checkbox" name="newsletter" value="subscribe" checked>
-                            Please
-                            Subscribe me to the monthly newsletter</label>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter"
+                              value="subscribe" checked> Please Subscribe me to the monthly
+                            newsletter
+                        </label>
                     </div>
 
                     <button type="submit" class="submit-btn">Get in Touch!</button>
