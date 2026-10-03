@@ -281,6 +281,11 @@ hr {
     align-items: start;
 }
 
+.map-container iframe {
+    width: 100%;
+    border: 0;
+}
+
 /* Contact Form */
 .contact-form {
     display: flex;
