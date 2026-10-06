@@ -489,6 +489,10 @@ hr {
 
 /* --- Trips Page --- */
 /* Grid Content */
+h1 {
+    text-align: center;
+}
+
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
