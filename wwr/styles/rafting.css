@@ -263,6 +263,7 @@ hr {
 /* --- Contact Page --- */
 /* Company Info */
 .company-info {
+    background-color: var(--gallery-background-color);
     text-align: center;
     margin-bottom: 2rem;
     color: var(--accent1-color);
